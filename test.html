@@ -1,0 +1,35 @@
+<!-- PDF 2.62 -->
+<script>
+    const array = [1, 2, 3];
+    // array.map() : map 함수 기본 사용법
+    // map 안에 콜백함수가 있다는 가정하에 콜백함수가 요소의 개수만큼 반복되어 실행됨
+    // array.map(() => {
+    //     alert(1);
+    // });
+
+    // // 요소가 3개면 내가 넣은 콜백함수가 3번 동작
+    // // 3번 return된 결과를 새로운 배열로 만들어냄
+    // const result = array.map(() => {
+    //     return 1;
+    // });
+    // alert(result);
+
+    // const result = array.map(() => {
+    //     alert(1);
+    //     return 'ABC';
+    // });
+
+    // // 콜백함수의 첫번째 매개변수 value 넣어주기
+    // const result = array.map((value) => {
+    //     return value;
+    // });
+    // alert(result);
+    // // 원래 가지고 있던 값 1, 2, 3이 그대로 value로 전달되어서 배열이 만들어짐
+
+    // 얻어낸 값을 활용하여 새로운 결과값을 만들어내기 위해 map 사용
+    const result = array.map((value) => {
+        return `<a ${value}>`;
+    });
+    alert(result);
+    // 원래 배열의 값을 내 마음대로 가공 가능
+</script>
